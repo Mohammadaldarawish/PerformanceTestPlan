@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741387063374,933,Login Request,200,OK,Thread Group 1-1,text,true,,47457,355,1,1,https://internals.usclarity.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=true,594,0,346
+1741387064313,97,Prescreening Page Request,400,Bad Request,Thread Group 1-1,text,false,Test failed: code expected to contain /200/,280,474,1,1,https://internals.usclarity.com/admincp/prescreening-page,96,0,0
+1741387064411,336,Logout Request,302,Found,Thread Group 1-1,text,true,,1201,391,1,1,https://internals.usclarity.com/admincp/logout,335,0,193
