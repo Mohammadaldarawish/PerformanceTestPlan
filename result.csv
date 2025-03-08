@@ -1,4 +1,469 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1741387063374,933,Login Request,200,OK,Thread Group 1-1,text,true,,47457,355,1,1,https://internals.usclarity.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=true,594,0,346
-1741387064313,97,Prescreening Page Request,400,Bad Request,Thread Group 1-1,text,false,Test failed: code expected to contain /200/,280,474,1,1,https://internals.usclarity.com/admincp/prescreening-page,96,0,0
-1741387064411,336,Logout Request,302,Found,Thread Group 1-1,text,true,,1201,391,1,1,https://internals.usclarity.com/admincp/logout,335,0,193
+1741445738500,606,Login Request,200,OK,Production-Internals 1-1,text,true,,47464,355,2,2,https://internals.usclarity.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,482,0,259
+1741445738966,476,Login Request,200,OK,Production-Internals 1-2,text,true,,47469,355,2,2,https://internals.usclarity.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,360,0,180
+1741445739110,360,Prescreening page Request,200,OK,Production-Internals 1-1,text,true,,48659,926,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445739110,115,Prescreening page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/prescreening-page,112,0,0
+1741445739226,244,Prescreening page Request-1,200,OK,Production-Internals 1-1,text,true,,47458,457,2,2,https://internals.usclarity.com/admincp/login,170,0,0
+1741445739443,359,Prescreening page Request,200,OK,Production-Internals 1-2,text,true,,48659,926,2,2,https://internals.usclarity.com/admincp/login,116,0,0
+1741445739443,116,Prescreening page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/prescreening-page,116,0,0
+1741445739560,242,Prescreening page Request-1,200,OK,Production-Internals 1-2,text,true,,47458,457,2,2,https://internals.usclarity.com/admincp/login,181,0,0
+1741445739471,332,Purchase Reports Page Request,200,OK,Production-Internals 1-1,text,true,,48652,925,2,2,https://internals.usclarity.com/admincp/login,114,0,0
+1741445739471,114,Purchase Reports Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,468,2,2,https://internals.usclarity.com/admincp/purchase-reports,114,0,0
+1741445739585,218,Purchase Reports Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,214,0,0
+1741445739804,400,Fee Split Profiles Page Request,200,OK,Production-Internals 1-1,text,true,,48652,927,2,2,https://internals.usclarity.com/admincp/login,134,0,0
+1741445739804,134,Fee Split Profiles Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,470,2,2,https://internals.usclarity.com/admincp/fee-split-profiles,134,0,0
+1741445739939,265,Fee Split Profiles Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,192,0,0
+1741445739804,401,Purchase Reports Page Request,200,OK,Production-Internals 1-2,text,true,,48652,925,2,2,https://internals.usclarity.com/admincp/login,134,0,0
+1741445739804,134,Purchase Reports Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,468,2,2,https://internals.usclarity.com/admincp/purchase-reports,134,0,0
+1741445739939,266,Purchase Reports Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,192,0,0
+1741445740205,428,Report generation Page Request,200,OK,Production-Internals 1-1,text,true,,48652,924,2,2,https://internals.usclarity.com/admincp/login,113,0,0
+1741445740205,113,Report generation Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,467,2,2,https://internals.usclarity.com/admincp/purchase-orders,113,0,0
+1741445740318,315,Report generation Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,206,0,0
+1741445740206,427,Fee Split Profiles Page Request,200,OK,Production-Internals 1-2,text,true,,48652,927,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445740206,112,Fee Split Profiles Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,470,2,2,https://internals.usclarity.com/admincp/fee-split-profiles,112,0,0
+1741445740318,315,Fee Split Profiles Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,232,0,0
+1741445740634,428,Report generation Page Request,200,OK,Production-Internals 1-2,text,true,,48659,924,2,2,https://internals.usclarity.com/admincp/login,135,0,0
+1741445740634,135,Report generation Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,467,2,2,https://internals.usclarity.com/admincp/purchase-orders,135,0,0
+1741445740770,292,Report generation Page Request-1,200,OK,Production-Internals 1-2,text,true,,47458,457,2,2,https://internals.usclarity.com/admincp/login,289,0,0
+1741445740634,428,Ratchets Page Request,200,OK,Production-Internals 1-1,text,true,,48651,917,2,2,https://internals.usclarity.com/admincp/login,135,0,0
+1741445740634,135,Ratchets Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/ratchets,135,0,0
+1741445740770,292,Ratchets Page Request-1,200,OK,Production-Internals 1-1,text,true,,47450,457,2,2,https://internals.usclarity.com/admincp/login,289,0,0
+1741445741064,379,Sales Page Request,200,OK,Production-Internals 1-1,text,true,,48651,923,2,2,https://internals.usclarity.com/admincp/login,119,0,0
+1741445741064,379,Ratchets Page Request,200,OK,Production-Internals 1-2,text,true,,48651,917,2,2,https://internals.usclarity.com/admincp/login,119,0,0
+1741445741064,119,Sales Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,466,2,2,https://internals.usclarity.com/admincp/sales-webhooks,119,0,0
+1741445741064,119,Ratchets Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/ratchets,119,0,0
+1741445741184,259,Sales Page Request-1,200,OK,Production-Internals 1-1,text,true,,47450,457,2,2,https://internals.usclarity.com/admincp/login,209,0,0
+1741445741184,259,Ratchets Page Request-1,200,OK,Production-Internals 1-2,text,true,,47450,457,2,2,https://internals.usclarity.com/admincp/login,183,0,0
+1741445741445,404,Settlement predictions Page Request,200,OK,Production-Internals 1-1,text,true,,48659,931,2,2,https://internals.usclarity.com/admincp/login,134,0,0
+1741445741445,134,Settlement predictions Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,474,2,2,https://internals.usclarity.com/admincp/settlement-predictions,134,0,0
+1741445741579,270,Settlement predictions Page Request-1,200,OK,Production-Internals 1-1,text,true,,47458,457,2,2,https://internals.usclarity.com/admincp/login,214,0,0
+1741445741445,418,Sales Page Request,200,OK,Production-Internals 1-2,text,true,,48651,923,2,2,https://internals.usclarity.com/admincp/login,134,0,0
+1741445741445,134,Sales Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,466,2,2,https://internals.usclarity.com/admincp/sales-webhooks,134,0,0
+1741445741579,284,Sales Page Request-1,200,OK,Production-Internals 1-2,text,true,,47450,457,2,2,https://internals.usclarity.com/admincp/login,214,0,0
+1741445741864,423,Settlement predictions Page Request,200,OK,Production-Internals 1-2,text,true,,48652,931,2,2,https://internals.usclarity.com/admincp/login,127,0,0
+1741445741851,436,Negotiator Commissions Page Request,200,OK,Production-Internals 1-1,text,true,,48652,931,2,2,https://internals.usclarity.com/admincp/login,133,0,0
+1741445741864,127,Settlement predictions Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,474,2,2,https://internals.usclarity.com/admincp/settlement-predictions,127,0,0
+1741445741851,133,Negotiator Commissions Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,474,2,2,https://internals.usclarity.com/admincp/negotiator-commissions,133,0,0
+1741445741992,295,Settlement predictions Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,292,0,0
+1741445741985,302,Negotiator Commissions Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,299,0,0
+1741445742289,393,Loan Specialist Page Request,200,OK,Production-Internals 1-1,text,true,,48652,936,2,2,https://internals.usclarity.com/admincp/login,133,0,0
+1741445742289,393,Negotiator Commissions Page Request,200,OK,Production-Internals 1-2,text,true,,48652,931,2,2,https://internals.usclarity.com/admincp/login,133,0,0
+1741445742289,133,Loan Specialist Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,479,2,2,https://internals.usclarity.com/admincp/loan-specialist-commissions,133,0,0
+1741445742289,133,Negotiator Commissions Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,474,2,2,https://internals.usclarity.com/admincp/negotiator-commissions,133,0,0
+1741445742423,259,Loan Specialist Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,256,0,0
+1741445742423,259,Negotiator Commissions Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,256,0,0
+1741445742685,357,Lending supervisor commissions Page Request,200,OK,Production-Internals 1-1,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,111,0,0
+1741445742685,111,Lending supervisor commissions Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/lending-supervisor-commissions,111,0,0
+1741445742797,245,Lending supervisor commissions Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,199,0,0
+1741445742685,358,Loan Specialist Page Request,200,OK,Production-Internals 1-2,text,true,,48652,936,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445742685,113,Loan Specialist Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,479,2,2,https://internals.usclarity.com/admincp/loan-specialist-commissions,112,0,0
+1741445742798,245,Loan Specialist Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,198,0,0
+1741445743044,387,Graduation Review Page Request,200,OK,Production-Internals 1-1,text,true,,48652,926,2,2,https://internals.usclarity.com/admincp/login,132,0,0
+1741445743044,133,Graduation Review Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/graduation-review,132,0,0
+1741445743177,254,Graduation Review Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,218,0,0
+1741445743044,405,Lending supervisor commissions Page Request,200,OK,Production-Internals 1-2,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,132,0,0
+1741445743044,133,Lending supervisor commissions Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/lending-supervisor-commissions,132,0,0
+1741445743177,272,Lending supervisor commissions Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,218,0,0
+1741445743432,399,Negotiation Tiers Page Request,200,OK,Production-Internals 1-1,text,true,,48652,926,2,2,https://internals.usclarity.com/admincp/login,161,0,0
+1741445743432,161,Negotiation Tiers Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/negotiation-tiers,161,0,0
+1741445743593,238,Negotiation Tiers Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,183,0,0
+1741445743451,388,Graduation Review Page Request,200,OK,Production-Internals 1-2,text,true,,48652,926,2,2,https://internals.usclarity.com/admincp/login,135,0,0
+1741445743451,135,Graduation Review Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/graduation-review,135,0,0
+1741445743586,253,Graduation Review Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,182,0,0
+1741445743832,355,Negotiation Distribution Flags Page Request,200,OK,Production-Internals 1-1,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,129,0,0
+1741445743832,130,Negotiation Distribution Flags Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/negotiation-distribution-flags,129,0,0
+1741445743962,225,Negotiation Distribution Flags Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,174,0,0
+1741445743840,350,Negotiation Tiers Page Request,200,OK,Production-Internals 1-2,text,true,,48652,926,2,2,https://internals.usclarity.com/admincp/login,121,0,0
+1741445743840,122,Negotiation Tiers Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,469,2,2,https://internals.usclarity.com/admincp/negotiation-tiers,121,0,0
+1741445743962,228,Negotiation Tiers Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,174,0,0
+1741445744191,391,Negotiation Distribution Flags Page Request,200,OK,Production-Internals 1-2,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,137,0,0
+1741445744189,393,Negotiation Assignments Page Request,200,OK,Production-Internals 1-1,text,true,,48652,932,2,2,https://internals.usclarity.com/admincp/login,139,0,0
+1741445744191,138,Negotiation Distribution Flags Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/negotiation-distribution-flags,137,0,0
+1741445744189,140,Negotiation Assignments Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,475,2,2,https://internals.usclarity.com/admincp/negotiation-assignments,139,0,0
+1741445744329,253,Negotiation Distribution Flags Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,204,0,0
+1741445744329,253,Negotiation Assignments Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,204,0,0
+1741445744583,389,Legal Law Firms Page Request,200,OK,Production-Internals 1-1,text,true,,48652,924,2,2,https://internals.usclarity.com/admincp/login,113,0,0
+1741445744583,113,Legal Law Firms Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,467,2,2,https://internals.usclarity.com/admincp/legal-law-firms,113,0,0
+1741445744697,275,Legal Law Firms Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,177,0,0
+1741445744583,389,Negotiation Assignments Page Request,200,OK,Production-Internals 1-2,text,true,,48652,932,2,2,https://internals.usclarity.com/admincp/login,113,0,0
+1741445744583,113,Negotiation Assignments Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,475,2,2,https://internals.usclarity.com/admincp/negotiation-assignments,113,0,0
+1741445744697,275,Negotiation Assignments Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,177,0,0
+1741445744973,370,Difficult Creditors Page Request,200,OK,Production-Internals 1-1,text,true,,48652,928,2,2,https://internals.usclarity.com/admincp/login,113,0,0
+1741445744973,113,Difficult Creditors Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,471,2,2,https://internals.usclarity.com/admincp/difficult-creditors,113,0,0
+1741445745087,256,Difficult Creditors Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,198,0,0
+1741445744973,371,Legal Law Firms Page Request,200,OK,Production-Internals 1-2,text,true,,48652,924,2,2,https://internals.usclarity.com/admincp/login,122,0,0
+1741445744973,122,Legal Law Firms Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,467,2,2,https://internals.usclarity.com/admincp/legal-law-firms,122,0,0
+1741445745095,249,Legal Law Firms Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,190,0,0
+1741445745345,339,Debt Brackets Page Request,200,OK,Production-Internals 1-1,text,true,,48652,922,2,2,https://internals.usclarity.com/admincp/login,113,0,0
+1741445745345,114,Debt Brackets Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,465,2,2,https://internals.usclarity.com/admincp/debt-brackets,113,0,0
+1741445745459,225,Debt Brackets Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,167,0,0
+1741445745345,369,Difficult Creditors Page Request,200,OK,Production-Internals 1-2,text,true,,48652,928,2,2,https://internals.usclarity.com/admincp/login,116,0,0
+1741445745345,116,Difficult Creditors Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,471,2,2,https://internals.usclarity.com/admincp/difficult-creditors,116,0,0
+1741445745461,253,Difficult Creditors Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,165,0,0
+1741445745685,345,Negotiator Inquiry Page Request,200,OK,Production-Internals 1-1,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,136,0,0
+1741445745685,136,Negotiator Inquiry Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/contact-debts-negotiation-page,136,0,0
+1741445745822,208,Negotiator Inquiry Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,175,0,0
+1741445745715,325,Debt Brackets Page Request,200,OK,Production-Internals 1-2,text,true,,48652,922,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445745715,112,Debt Brackets Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,465,2,2,https://internals.usclarity.com/admincp/debt-brackets,112,0,0
+1741445745828,212,Debt Brackets Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,169,0,0
+1741445746032,344,Settings Page Request,200,OK,Production-Internals 1-1,text,true,,48652,917,2,2,https://internals.usclarity.com/admincp/login,119,0,0
+1741445746032,119,Settings Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/settings,119,0,0
+1741445746152,224,Settings Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,181,0,0
+1741445746041,335,Negotiator Inquiry Page Request,200,OK,Production-Internals 1-2,text,true,,48652,939,2,2,https://internals.usclarity.com/admincp/login,110,0,0
+1741445746041,110,Negotiator Inquiry Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,482,2,2,https://internals.usclarity.com/admincp/contact-debts-negotiation-page,110,0,0
+1741445746152,224,Negotiator Inquiry Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,186,0,0
+1741445746377,327,Messages Page Request,200,OK,Production-Internals 1-1,text,true,,48652,917,2,2,https://internals.usclarity.com/admincp/login,111,0,0
+1741445746377,111,Messages Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/messages,111,0,0
+1741445746489,215,Messages Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,182,0,0
+1741445746377,452,Settings Page Request,200,OK,Production-Internals 1-2,text,true,,48652,917,2,2,https://internals.usclarity.com/admincp/login,240,0,0
+1741445746377,241,Settings Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/settings,240,0,0
+1741445746618,211,Settings Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,166,0,0
+1741445746705,323,Faq Questions Page Request,200,OK,Production-Internals 1-1,text,true,,48652,922,2,2,https://internals.usclarity.com/admincp/login,122,0,0
+1741445746705,123,Faq Questions Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,465,2,2,https://internals.usclarity.com/admincp/faq-questions,122,0,0
+1741445746828,200,Faq Questions Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,172,0,0
+1741445746831,327,Messages Page Request,200,OK,Production-Internals 1-2,text,true,,48652,917,2,2,https://internals.usclarity.com/admincp/login,114,0,0
+1741445746831,115,Messages Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,460,2,2,https://internals.usclarity.com/admincp/messages,114,0,0
+1741445746946,212,Messages Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,165,0,0
+1741445747030,332,Faq Categories Page Request,200,OK,Production-Internals 1-1,text,true,,48652,923,2,2,https://internals.usclarity.com/admincp/login,119,0,0
+1741445747030,124,Faq Categories Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,466,2,2,https://internals.usclarity.com/admincp/faq-categories,119,0,0
+1741445747154,208,Faq Categories Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,169,0,0
+1741445747159,322,Faq Questions Page Request,200,OK,Production-Internals 1-2,text,true,,48652,922,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445747159,113,Faq Questions Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,465,2,2,https://internals.usclarity.com/admincp/faq-questions,112,0,0
+1741445747272,209,Faq Questions Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,167,0,0
+1741445747364,342,Employees Page Request,200,OK,Production-Internals 1-1,text,true,,48652,918,2,2,https://internals.usclarity.com/admincp/login,117,0,0
+1741445747364,117,Employees Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,461,2,2,https://internals.usclarity.com/admincp/employees,117,0,0
+1741445747481,225,Employees Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,178,0,0
+1741445747481,340,Faq Categories Page Request,200,OK,Production-Internals 1-2,text,true,,48652,923,2,2,https://internals.usclarity.com/admincp/login,122,0,0
+1741445747481,122,Faq Categories Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,466,2,2,https://internals.usclarity.com/admincp/faq-categories,122,0,0
+1741445747604,217,Faq Categories Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,171,0,0
+1741445747707,337,Commissions Page Request,200,OK,Production-Internals 1-1,text,true,,48652,920,2,2,https://internals.usclarity.com/admincp/login,114,0,0
+1741445747707,114,Commissions Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,463,2,2,https://internals.usclarity.com/admincp/commissions,114,0,0
+1741445747821,223,Commissions Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,187,0,0
+1741445747822,345,Employees Page Request,200,OK,Production-Internals 1-2,text,true,,48652,918,2,2,https://internals.usclarity.com/admincp/login,130,0,0
+1741445747822,130,Employees Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,461,2,2,https://internals.usclarity.com/admincp/employees,130,0,0
+1741445747953,214,Employees Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,169,0,0
+1741445748046,327,Adminstrators Page Request,200,OK,Production-Internals 1-1,text,true,,48652,915,2,2,https://internals.usclarity.com/admincp/login,121,0,0
+1741445748046,121,Adminstrators Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,458,2,2,https://internals.usclarity.com/admincp/admins,121,0,0
+1741445748167,206,Adminstrators Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,166,0,0
+1741445748167,322,Commissions Page Request,200,OK,Production-Internals 1-2,text,true,,48652,920,2,2,https://internals.usclarity.com/admincp/login,112,0,0
+1741445748167,112,Commissions Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,463,2,2,https://internals.usclarity.com/admincp/commissions,112,0,0
+1741445748279,210,Commissions Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,168,0,0
+1741445748374,341,Dashboard Page Request,200,OK,Production-Internals 1-1,text,true,,48652,908,2,2,https://internals.usclarity.com/admincp/login,116,0,0
+1741445748374,116,Dashboard Page Request-0,302,Found,Production-Internals 1-1,text,true,,1201,451,2,2,https://internals.usclarity.com/admincp,116,0,0
+1741445748491,224,Dashboard Page Request-1,200,OK,Production-Internals 1-1,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,184,0,0
+1741445748491,351,Adminstrators Page Request,200,OK,Production-Internals 1-2,text,true,,48652,915,2,2,https://internals.usclarity.com/admincp/login,129,0,0
+1741445748491,129,Adminstrators Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,458,2,2,https://internals.usclarity.com/admincp/admins,129,0,0
+1741445748621,221,Adminstrators Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,2,2,https://internals.usclarity.com/admincp/login,164,0,0
+1741445748717,125,Logout Request,302,Found,Production-Internals 1-1,text,true,,1201,391,2,2,https://internals.usclarity.com/admincp/logout,125,0,0
+1741445748845,322,Dashboard Page Request,200,OK,Production-Internals 1-2,text,true,,48652,908,1,1,https://internals.usclarity.com/admincp/login,111,0,0
+1741445748845,112,Dashboard Page Request-0,302,Found,Production-Internals 1-2,text,true,,1201,451,1,1,https://internals.usclarity.com/admincp,111,0,0
+1741445748957,210,Dashboard Page Request-1,200,OK,Production-Internals 1-2,text,true,,47451,457,1,1,https://internals.usclarity.com/admincp/login,167,0,0
+1741445749168,113,Logout Request,302,Found,Production-Internals 1-2,text,true,,1201,391,1,1,https://internals.usclarity.com/admincp/logout,113,0,0
+1741445749295,453,Login Request,200,OK,STG-Internals 2-1,text,true,,47481,363,1,1,https://stg.internals.usclaritytech.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,342,0,157
+1741445749750,329,Purchase Reports Page Request,200,OK,STG-Internals 2-1,text,true,,48723,941,2,2,https://stg.internals.usclaritytech.com/admincp/login,112,0,0
+1741445749750,114,Purchase Reports Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,476,2,2,https://stg.internals.usclaritytech.com/admincp/purchase-reports,112,0,0
+1741445749864,215,Purchase Reports Page Request-1,200,OK,STG-Internals 2-1,text,true,,47482,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,171,0,0
+1741445749799,443,Login Request,200,OK,STG-Internals 2-2,text,true,,47481,363,2,2,https://stg.internals.usclaritytech.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,329,0,158
+1741445750080,312,Fee Split Profiles Page Request,200,OK,STG-Internals 2-1,text,true,,48716,943,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445750080,110,Fee Split Profiles Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,478,2,2,https://stg.internals.usclaritytech.com/admincp/fee-split-profiles,110,0,0
+1741445750190,202,Fee Split Profiles Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,160,0,0
+1741445750243,351,Purchase Reports Page Request,200,OK,STG-Internals 2-2,text,true,,48723,941,2,2,https://stg.internals.usclaritytech.com/admincp/login,120,0,0
+1741445750243,120,Purchase Reports Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,476,2,2,https://stg.internals.usclaritytech.com/admincp/purchase-reports,120,0,0
+1741445750364,230,Purchase Reports Page Request-1,200,OK,STG-Internals 2-2,text,true,,47482,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,176,0,0
+1741445750393,309,Report generation Page Request,200,OK,STG-Internals 2-1,text,true,,48716,940,2,2,https://stg.internals.usclaritytech.com/admincp/login,111,0,0
+1741445750393,111,Report generation Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,475,2,2,https://stg.internals.usclaritytech.com/admincp/purchase-orders,111,0,0
+1741445750504,198,Report generation Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445750596,319,Fee Split Profiles Page Request,200,OK,STG-Internals 2-2,text,true,,48716,943,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445750596,110,Fee Split Profiles Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,478,2,2,https://stg.internals.usclaritytech.com/admincp/fee-split-profiles,110,0,0
+1741445750706,209,Fee Split Profiles Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,172,0,0
+1741445750703,306,Ratchets Page Request,200,OK,STG-Internals 2-1,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,114,0,0
+1741445750703,115,Ratchets Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/ratchets,114,0,0
+1741445750818,191,Ratchets Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445750917,312,Report generation Page Request,200,OK,STG-Internals 2-2,text,true,,48716,940,2,2,https://stg.internals.usclaritytech.com/admincp/login,112,0,0
+1741445750917,112,Report generation Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,475,2,2,https://stg.internals.usclaritytech.com/admincp/purchase-orders,112,0,0
+1741445751029,200,Report generation Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,166,0,0
+1741445751010,314,Sales Page Request,200,OK,STG-Internals 2-1,text,true,,48716,939,2,2,https://stg.internals.usclaritytech.com/admincp/login,120,0,0
+1741445751010,120,Sales Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,474,2,2,https://stg.internals.usclaritytech.com/admincp/sales-webhooks,120,0,0
+1741445751131,193,Sales Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,161,0,0
+1741445751231,333,Ratchets Page Request,200,OK,STG-Internals 2-2,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,111,0,0
+1741445751231,111,Ratchets Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/ratchets,111,0,0
+1741445751343,221,Ratchets Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,182,0,0
+1741445751325,317,Settlement predictions Page Request,200,OK,STG-Internals 2-1,text,true,,48716,947,2,2,https://stg.internals.usclaritytech.com/admincp/login,124,0,0
+1741445751325,124,Settlement predictions Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,482,2,2,https://stg.internals.usclaritytech.com/admincp/settlement-predictions,124,0,0
+1741445751450,192,Settlement predictions Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445751565,302,Sales Page Request,200,OK,STG-Internals 2-2,text,true,,48716,939,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445751565,110,Sales Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,474,2,2,https://stg.internals.usclaritytech.com/admincp/sales-webhooks,110,0,0
+1741445751675,192,Sales Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,157,0,0
+1741445751643,315,Negotiator Commissions Page Request,200,OK,STG-Internals 2-1,text,true,,48716,947,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445751643,110,Negotiator Commissions Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,482,2,2,https://stg.internals.usclaritytech.com/admincp/negotiator-commissions,110,0,0
+1741445751754,204,Negotiator Commissions Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,167,0,0
+1741445751869,315,Settlement predictions Page Request,200,OK,STG-Internals 2-2,text,true,,48716,947,2,2,https://stg.internals.usclaritytech.com/admincp/login,118,0,0
+1741445751869,118,Settlement predictions Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,482,2,2,https://stg.internals.usclaritytech.com/admincp/settlement-predictions,118,0,0
+1741445751987,197,Settlement predictions Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,166,0,0
+1741445751959,306,Loan Specialist Page Request,200,OK,STG-Internals 2-1,text,true,,48716,952,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445751959,111,Loan Specialist Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,487,2,2,https://stg.internals.usclaritytech.com/admincp/loan-specialist-commissions,110,0,0
+1741445752070,195,Loan Specialist Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,157,0,0
+1741445752185,313,Negotiator Commissions Page Request,200,OK,STG-Internals 2-2,text,true,,48716,947,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445752185,110,Negotiator Commissions Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,482,2,2,https://stg.internals.usclaritytech.com/admincp/negotiator-commissions,110,0,0
+1741445752296,202,Negotiator Commissions Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,171,0,0
+1741445752266,318,Lending supervisor commissions Page Request,200,OK,STG-Internals 2-1,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,115,0,0
+1741445752266,115,Lending supervisor commissions Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/lending-supervisor-commissions,115,0,0
+1741445752381,203,Lending supervisor commissions Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,174,0,0
+1741445752499,311,Loan Specialist Page Request,200,OK,STG-Internals 2-2,text,true,,48716,952,2,2,https://stg.internals.usclaritytech.com/admincp/login,107,0,0
+1741445752499,108,Loan Specialist Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,487,2,2,https://stg.internals.usclaritytech.com/admincp/loan-specialist-commissions,107,0,0
+1741445752607,203,Loan Specialist Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,168,0,0
+1741445752585,321,Graduation Review Page Request,200,OK,STG-Internals 2-1,text,true,,48716,942,2,2,https://stg.internals.usclaritytech.com/admincp/login,124,0,0
+1741445752585,124,Graduation Review Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,477,2,2,https://stg.internals.usclaritytech.com/admincp/graduation-review,124,0,0
+1741445752710,196,Graduation Review Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,162,0,0
+1741445752812,320,Lending supervisor commissions Page Request,200,OK,STG-Internals 2-2,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,113,0,0
+1741445752812,113,Lending supervisor commissions Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/lending-supervisor-commissions,113,0,0
+1741445752926,206,Lending supervisor commissions Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,171,0,0
+1741445752907,314,Negotiation Tiers Page Request,200,OK,STG-Internals 2-1,text,true,,48716,942,2,2,https://stg.internals.usclaritytech.com/admincp/login,124,0,0
+1741445752907,125,Negotiation Tiers Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,477,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-tiers,124,0,0
+1741445753032,189,Negotiation Tiers Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,156,0,0
+1741445753132,306,Graduation Review Page Request,200,OK,STG-Internals 2-2,text,true,,48716,942,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445753132,110,Graduation Review Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,477,2,2,https://stg.internals.usclaritytech.com/admincp/graduation-review,110,0,0
+1741445753242,196,Graduation Review Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,167,0,0
+1741445753221,308,Negotiation Distribution Flags Page Request,200,OK,STG-Internals 2-1,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,111,0,0
+1741445753221,111,Negotiation Distribution Flags Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-distribution-flags,111,0,0
+1741445753332,197,Negotiation Distribution Flags Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,162,0,0
+1741445753439,328,Negotiation Tiers Page Request,200,OK,STG-Internals 2-2,text,true,,48716,942,2,2,https://stg.internals.usclaritytech.com/admincp/login,109,0,0
+1741445753439,109,Negotiation Tiers Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,477,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-tiers,109,0,0
+1741445753549,218,Negotiation Tiers Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,163,0,0
+1741445753530,304,Negotiation Assignments Page Request,200,OK,STG-Internals 2-1,text,true,,48716,948,2,2,https://stg.internals.usclaritytech.com/admincp/login,112,0,0
+1741445753530,112,Negotiation Assignments Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,483,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-assignments,112,0,0
+1741445753643,191,Negotiation Assignments Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,155,0,0
+1741445753767,308,Negotiation Distribution Flags Page Request,200,OK,STG-Internals 2-2,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445753767,110,Negotiation Distribution Flags Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-distribution-flags,110,0,0
+1741445753877,198,Negotiation Distribution Flags Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,167,0,0
+1741445753834,316,Legal Law Firms Page Request,200,OK,STG-Internals 2-1,text,true,,48716,940,2,2,https://stg.internals.usclaritytech.com/admincp/login,111,0,0
+1741445753834,112,Legal Law Firms Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,475,2,2,https://stg.internals.usclaritytech.com/admincp/legal-law-firms,111,0,0
+1741445753946,204,Legal Law Firms Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,170,0,0
+1741445754077,306,Negotiation Assignments Page Request,200,OK,STG-Internals 2-2,text,true,,48716,948,2,2,https://stg.internals.usclaritytech.com/admincp/login,108,0,0
+1741445754077,108,Negotiation Assignments Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,483,2,2,https://stg.internals.usclaritytech.com/admincp/negotiation-assignments,108,0,0
+1741445754186,197,Negotiation Assignments Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,166,0,0
+1741445754151,304,Difficult Creditors Page Request,200,OK,STG-Internals 2-1,text,true,,48716,944,2,2,https://stg.internals.usclaritytech.com/admincp/login,109,0,0
+1741445754151,110,Difficult Creditors Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,479,2,2,https://stg.internals.usclaritytech.com/admincp/difficult-creditors,109,0,0
+1741445754261,194,Difficult Creditors Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445754385,302,Legal Law Firms Page Request,200,OK,STG-Internals 2-2,text,true,,48716,940,2,2,https://stg.internals.usclaritytech.com/admincp/login,109,0,0
+1741445754385,110,Legal Law Firms Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,475,2,2,https://stg.internals.usclaritytech.com/admincp/legal-law-firms,109,0,0
+1741445754495,192,Legal Law Firms Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445754457,311,Debt Brackets Page Request,200,OK,STG-Internals 2-1,text,true,,48716,938,2,2,https://stg.internals.usclaritytech.com/admincp/login,108,0,0
+1741445754457,109,Debt Brackets Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,473,2,2,https://stg.internals.usclaritytech.com/admincp/debt-brackets,108,0,0
+1741445754566,202,Debt Brackets Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,161,0,0
+1741445754688,321,Difficult Creditors Page Request,200,OK,STG-Internals 2-2,text,true,,48716,944,2,2,https://stg.internals.usclaritytech.com/admincp/login,113,0,0
+1741445754688,114,Difficult Creditors Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,479,2,2,https://stg.internals.usclaritytech.com/admincp/difficult-creditors,113,0,0
+1741445754802,207,Difficult Creditors Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,172,0,0
+1741445754770,328,Negotiator Inquiry Page Request,200,OK,STG-Internals 2-1,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,122,0,0
+1741445754770,123,Negotiator Inquiry Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/contact-debts-negotiation-page,122,0,0
+1741445754893,205,Negotiator Inquiry Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,171,0,0
+1741445755011,313,Debt Brackets Page Request,200,OK,STG-Internals 2-2,text,true,,48716,938,2,2,https://stg.internals.usclaritytech.com/admincp/login,111,0,0
+1741445755011,111,Debt Brackets Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,473,2,2,https://stg.internals.usclaritytech.com/admincp/debt-brackets,111,0,0
+1741445755123,201,Debt Brackets Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,168,0,0
+1741445755099,322,Settings Page Request,200,OK,STG-Internals 2-1,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,120,0,0
+1741445755099,121,Settings Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/settings,120,0,0
+1741445755220,201,Settings Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,171,0,0
+1741445755326,321,Negotiator Inquiry Page Request,200,OK,STG-Internals 2-2,text,true,,48716,955,2,2,https://stg.internals.usclaritytech.com/admincp/login,120,0,0
+1741445755326,120,Negotiator Inquiry Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,490,2,2,https://stg.internals.usclaritytech.com/admincp/contact-debts-negotiation-page,120,0,0
+1741445755446,201,Negotiator Inquiry Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,168,0,0
+1741445755422,326,Messages Page Request,200,OK,STG-Internals 2-1,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,125,0,0
+1741445755422,125,Messages Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/messages,125,0,0
+1741445755548,200,Messages Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,163,0,0
+1741445755648,302,Settings Page Request,200,OK,STG-Internals 2-2,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,107,0,0
+1741445755648,107,Settings Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/settings,107,0,0
+1741445755755,195,Settings Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,161,0,0
+1741445755749,305,Faq Questions Page Request,200,OK,STG-Internals 2-1,text,true,,48716,938,2,2,https://stg.internals.usclaritytech.com/admincp/login,112,0,0
+1741445755749,112,Faq Questions Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,473,2,2,https://stg.internals.usclaritytech.com/admincp/faq-questions,112,0,0
+1741445755862,192,Faq Questions Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,160,0,0
+1741445755952,313,Messages Page Request,200,OK,STG-Internals 2-2,text,true,,48716,933,2,2,https://stg.internals.usclaritytech.com/admincp/login,109,0,0
+1741445755952,109,Messages Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,468,2,2,https://stg.internals.usclaritytech.com/admincp/messages,109,0,0
+1741445756061,204,Messages Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,170,0,0
+1741445756054,343,Faq Categories Page Request,200,OK,STG-Internals 2-1,text,true,,48716,939,2,2,https://stg.internals.usclaritytech.com/admincp/login,127,0,0
+1741445756054,127,Faq Categories Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,474,2,2,https://stg.internals.usclaritytech.com/admincp/faq-categories,127,0,0
+1741445756181,216,Faq Categories Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,158,0,0
+1741445756267,348,Faq Questions Page Request,200,OK,STG-Internals 2-2,text,true,,48716,938,2,2,https://stg.internals.usclaritytech.com/admincp/login,130,0,0
+1741445756267,130,Faq Questions Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,473,2,2,https://stg.internals.usclaritytech.com/admincp/faq-questions,130,0,0
+1741445756398,217,Faq Questions Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,191,0,0
+1741445756399,330,Employees Page Request,200,OK,STG-Internals 2-1,text,true,,48716,934,2,2,https://stg.internals.usclaritytech.com/admincp/login,131,0,0
+1741445756399,131,Employees Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,469,2,2,https://stg.internals.usclaritytech.com/admincp/employees,131,0,0
+1741445756530,199,Employees Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,166,0,0
+1741445756616,331,Faq Categories Page Request,200,OK,STG-Internals 2-2,text,true,,48716,939,2,2,https://stg.internals.usclaritytech.com/admincp/login,113,0,0
+1741445756616,113,Faq Categories Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,474,2,2,https://stg.internals.usclaritytech.com/admincp/faq-categories,113,0,0
+1741445756730,217,Faq Categories Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,181,0,0
+1741445756730,322,Commissions Page Request,200,OK,STG-Internals 2-1,text,true,,48716,936,2,2,https://stg.internals.usclaritytech.com/admincp/login,127,0,0
+1741445756730,128,Commissions Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,471,2,2,https://stg.internals.usclaritytech.com/admincp/commissions,127,0,0
+1741445756858,194,Commissions Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,160,0,0
+1741445756948,310,Employees Page Request,200,OK,STG-Internals 2-2,text,true,,48716,934,2,2,https://stg.internals.usclaritytech.com/admincp/login,109,0,0
+1741445756948,110,Employees Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,469,2,2,https://stg.internals.usclaritytech.com/admincp/employees,109,0,0
+1741445757058,200,Employees Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,158,0,0
+1741445757054,308,Adminstrators Page Request,200,OK,STG-Internals 2-1,text,true,,48716,931,2,2,https://stg.internals.usclaritytech.com/admincp/login,112,0,0
+1741445757054,113,Adminstrators Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,466,2,2,https://stg.internals.usclaritytech.com/admincp/admins,112,0,0
+1741445757167,195,Adminstrators Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,160,0,0
+1741445757260,338,Commissions Page Request,200,OK,STG-Internals 2-2,text,true,,48716,936,2,2,https://stg.internals.usclaritytech.com/admincp/login,110,0,0
+1741445757260,111,Commissions Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,471,2,2,https://stg.internals.usclaritytech.com/admincp/commissions,110,0,0
+1741445757372,226,Commissions Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,175,0,0
+1741445757364,322,Dashboard Page Request,200,OK,STG-Internals 2-1,text,true,,48716,924,2,2,https://stg.internals.usclaritytech.com/admincp/login,130,0,0
+1741445757364,130,Dashboard Page Request-0,302,Found,STG-Internals 2-1,text,true,,1241,459,2,2,https://stg.internals.usclaritytech.com/admincp,130,0,0
+1741445757495,191,Dashboard Page Request-1,200,OK,STG-Internals 2-1,text,true,,47475,465,2,2,https://stg.internals.usclaritytech.com/admincp/login,155,0,0
+1741445757687,112,Logout Request,302,Found,STG-Internals 2-1,text,true,,1241,399,2,2,https://stg.internals.usclaritytech.com/admincp/logout,112,0,0
+1741445757599,307,Adminstrators Page Request,200,OK,STG-Internals 2-2,text,true,,48716,931,1,1,https://stg.internals.usclaritytech.com/admincp/login,115,0,0
+1741445757599,115,Adminstrators Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,466,1,1,https://stg.internals.usclaritytech.com/admincp/admins,115,0,0
+1741445757715,191,Adminstrators Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,1,1,https://stg.internals.usclaritytech.com/admincp/login,159,0,0
+1741445757907,318,Dashboard Page Request,200,OK,STG-Internals 2-2,text,true,,48716,924,1,1,https://stg.internals.usclaritytech.com/admincp/login,119,0,0
+1741445757907,119,Dashboard Page Request-0,302,Found,STG-Internals 2-2,text,true,,1241,459,1,1,https://stg.internals.usclaritytech.com/admincp,119,0,0
+1741445758027,198,Dashboard Page Request-1,200,OK,STG-Internals 2-2,text,true,,47475,465,1,1,https://stg.internals.usclaritytech.com/admincp/login,160,0,0
+1741445758227,110,Logout Request,302,Found,STG-Internals 2-2,text,true,,1241,399,1,1,https://stg.internals.usclaritytech.com/admincp/logout,110,0,0
+1741445758350,627,Login Request,200,OK,DEV-Internals 3-1,text,true,,47357,363,2,2,https://dev.internals.usclaritytech.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,512,0,155
+1741445758856,484,Login Request,200,OK,DEV-Internals 3-2,text,true,,47357,363,2,2,https://dev.internals.usclaritytech.com/admincp/login?email=system@usclarity.com&password=SYSTEMPWD&remember=TRUE,330,0,156
+1741445758979,362,Purchase Reports Page Request,200,OK,DEV-Internals 3-1,text,true,,48599,941,2,2,https://dev.internals.usclaritytech.com/admincp/login,110,0,0
+1741445758979,110,Purchase Reports Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,476,2,2,https://dev.internals.usclaritytech.com/admincp/purchase-reports,110,0,0
+1741445759089,252,Purchase Reports Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,164,0,0
+1741445759342,332,Fee Split Profiles Page Request,200,OK,DEV-Internals 3-1,text,true,,48591,943,2,2,https://dev.internals.usclaritytech.com/admincp/login,113,0,0
+1741445759342,114,Fee Split Profiles Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,478,2,2,https://dev.internals.usclaritytech.com/admincp/fee-split-profiles,113,0,0
+1741445759465,209,Fee Split Profiles Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47350,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,169,0,0
+1741445759342,347,Purchase Reports Page Request,200,OK,DEV-Internals 3-2,text,true,,48599,941,2,2,https://dev.internals.usclaritytech.com/admincp/login,112,0,0
+1741445759342,112,Purchase Reports Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,476,2,2,https://dev.internals.usclaritytech.com/admincp/purchase-reports,112,0,0
+1741445759455,234,Purchase Reports Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,163,0,0
+1741445759675,338,Report generation Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,940,2,2,https://dev.internals.usclaritytech.com/admincp/login,119,0,0
+1741445759675,119,Report generation Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,475,2,2,https://dev.internals.usclaritytech.com/admincp/purchase-orders,119,0,0
+1741445759794,219,Report generation Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,218,0,0
+1741445759689,324,Fee Split Profiles Page Request,200,OK,DEV-Internals 3-2,text,true,,48591,943,2,2,https://dev.internals.usclaritytech.com/admincp/login,108,0,0
+1741445759689,109,Fee Split Profiles Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,478,2,2,https://dev.internals.usclaritytech.com/admincp/fee-split-profiles,108,0,0
+1741445759798,215,Fee Split Profiles Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47350,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,163,0,0
+1741445760017,393,Report generation Page Request,200,OK,DEV-Internals 3-2,text,true,,48599,940,2,2,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445760017,135,Report generation Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,475,2,2,https://dev.internals.usclaritytech.com/admincp/purchase-orders,135,0,0
+1741445760153,257,Report generation Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,256,0,0
+1741445760017,394,Ratchets Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445760017,135,Ratchets Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/ratchets,135,0,0
+1741445760153,258,Ratchets Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,256,0,0
+1741445760411,408,Ratchets Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,132,0,0
+1741445760411,132,Ratchets Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/ratchets,132,0,0
+1741445760544,275,Ratchets Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,275,0,0
+1741445760412,408,Sales Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,939,2,2,https://dev.internals.usclaritytech.com/admincp/login,131,0,0
+1741445760412,131,Sales Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,474,2,2,https://dev.internals.usclaritytech.com/admincp/sales-webhooks,131,0,0
+1741445760544,276,Sales Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,275,0,0
+1741445760821,408,Sales Page Request,200,OK,DEV-Internals 3-2,text,true,,48598,939,2,2,https://dev.internals.usclaritytech.com/admincp/login,141,0,0
+1741445760821,142,Sales Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,474,2,2,https://dev.internals.usclaritytech.com/admincp/sales-webhooks,141,0,0
+1741445760963,266,Sales Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47357,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,265,0,0
+1741445760821,409,Settlement predictions Page Request,200,OK,DEV-Internals 3-1,text,true,,48599,947,2,2,https://dev.internals.usclaritytech.com/admincp/login,141,0,0
+1741445760821,142,Settlement predictions Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,482,2,2,https://dev.internals.usclaritytech.com/admincp/settlement-predictions,141,0,0
+1741445760963,267,Settlement predictions Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,265,0,0
+1741445761230,383,Settlement predictions Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,947,2,2,https://dev.internals.usclaritytech.com/admincp/login,133,0,0
+1741445761231,382,Negotiator Commissions Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,947,2,2,https://dev.internals.usclaritytech.com/admincp/login,132,0,0
+1741445761230,133,Settlement predictions Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,482,2,2,https://dev.internals.usclaritytech.com/admincp/settlement-predictions,133,0,0
+1741445761231,132,Negotiator Commissions Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,482,2,2,https://dev.internals.usclaritytech.com/admincp/negotiator-commissions,132,0,0
+1741445761363,250,Settlement predictions Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,182,0,0
+1741445761363,250,Negotiator Commissions Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,182,0,0
+1741445761614,373,Loan Specialist Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,952,2,2,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445761614,373,Negotiator Commissions Page Request,200,OK,DEV-Internals 3-2,text,true,,48598,947,2,2,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445761614,135,Negotiator Commissions Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,482,2,2,https://dev.internals.usclaritytech.com/admincp/negotiator-commissions,135,0,0
+1741445761614,135,Loan Specialist Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,487,2,2,https://dev.internals.usclaritytech.com/admincp/loan-specialist-commissions,135,0,0
+1741445761750,237,Negotiator Commissions Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47357,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,184,0,0
+1741445761750,237,Loan Specialist Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,184,0,0
+1741445761988,383,Loan Specialist Page Request,200,OK,DEV-Internals 3-2,text,true,,48591,952,2,2,https://dev.internals.usclaritytech.com/admincp/login,126,0,0
+1741445761988,383,Lending supervisor commissions Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,125,0,0
+1741445761988,126,Lending supervisor commissions Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/lending-supervisor-commissions,125,0,0
+1741445761988,127,Loan Specialist Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,487,2,2,https://dev.internals.usclaritytech.com/admincp/loan-specialist-commissions,126,0,0
+1741445762114,257,Lending supervisor commissions Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,245,0,0
+1741445762115,256,Loan Specialist Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47350,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,244,0,0
+1741445762373,355,Lending supervisor commissions Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,110,0,0
+1741445762373,111,Lending supervisor commissions Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/lending-supervisor-commissions,110,0,0
+1741445762484,244,Lending supervisor commissions Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,195,0,0
+1741445762373,355,Graduation Review Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,942,2,2,https://dev.internals.usclaritytech.com/admincp/login,110,0,0
+1741445762373,111,Graduation Review Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,477,2,2,https://dev.internals.usclaritytech.com/admincp/graduation-review,110,0,0
+1741445762484,244,Graduation Review Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,200,0,0
+1741445762729,370,Graduation Review Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,942,2,2,https://dev.internals.usclaritytech.com/admincp/login,134,0,0
+1741445762729,370,Negotiation Tiers Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,942,2,2,https://dev.internals.usclaritytech.com/admincp/login,134,0,0
+1741445762729,134,Negotiation Tiers Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,477,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-tiers,134,0,0
+1741445762729,135,Graduation Review Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,477,2,2,https://dev.internals.usclaritytech.com/admincp/graduation-review,134,0,0
+1741445762864,235,Negotiation Tiers Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,192,0,0
+1741445762864,235,Graduation Review Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,192,0,0
+1741445763101,371,Negotiation Tiers Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,942,2,2,https://dev.internals.usclaritytech.com/admincp/login,115,0,0
+1741445763101,115,Negotiation Tiers Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,477,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-tiers,115,0,0
+1741445763217,255,Negotiation Tiers Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,188,0,0
+1741445763101,371,Negotiation Distribution Flags Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,115,0,0
+1741445763101,115,Negotiation Distribution Flags Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-distribution-flags,115,0,0
+1741445763217,255,Negotiation Distribution Flags Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,188,0,0
+1741445763473,340,Negotiation Distribution Flags Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,114,0,0
+1741445763473,115,Negotiation Distribution Flags Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-distribution-flags,114,0,0
+1741445763588,225,Negotiation Distribution Flags Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,177,0,0
+1741445763473,343,Negotiation Assignments Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,948,2,2,https://dev.internals.usclaritytech.com/admincp/login,114,0,0
+1741445763473,115,Negotiation Assignments Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,483,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-assignments,114,0,0
+1741445763588,228,Negotiation Assignments Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,172,0,0
+1741445763815,333,Negotiation Assignments Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,948,2,2,https://dev.internals.usclaritytech.com/admincp/login,124,0,0
+1741445763817,331,Legal Law Firms Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,940,2,2,https://dev.internals.usclaritytech.com/admincp/login,122,0,0
+1741445763815,124,Negotiation Assignments Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,483,2,2,https://dev.internals.usclaritytech.com/admincp/negotiation-assignments,124,0,0
+1741445763817,122,Legal Law Firms Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,475,2,2,https://dev.internals.usclaritytech.com/admincp/legal-law-firms,122,0,0
+1741445763939,209,Negotiation Assignments Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,207,0,0
+1741445763939,209,Legal Law Firms Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,208,0,0
+1741445764150,377,Difficult Creditors Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,944,2,2,https://dev.internals.usclaritytech.com/admincp/login,113,0,0
+1741445764150,377,Legal Law Firms Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,940,2,2,https://dev.internals.usclaritytech.com/admincp/login,113,0,0
+1741445764150,113,Difficult Creditors Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,479,2,2,https://dev.internals.usclaritytech.com/admincp/difficult-creditors,113,0,0
+1741445764150,113,Legal Law Firms Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,475,2,2,https://dev.internals.usclaritytech.com/admincp/legal-law-firms,113,0,0
+1741445764264,263,Difficult Creditors Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,170,0,0
+1741445764264,263,Legal Law Firms Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,166,0,0
+1741445764529,378,Difficult Creditors Page Request,200,OK,DEV-Internals 3-2,text,true,,48598,944,2,2,https://dev.internals.usclaritytech.com/admincp/login,111,0,0
+1741445764529,378,Debt Brackets Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,938,2,2,https://dev.internals.usclaritytech.com/admincp/login,111,0,0
+1741445764529,112,Difficult Creditors Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,479,2,2,https://dev.internals.usclaritytech.com/admincp/difficult-creditors,111,0,0
+1741445764641,266,Difficult Creditors Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47357,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,215,0,0
+1741445764529,111,Debt Brackets Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,473,2,2,https://dev.internals.usclaritytech.com/admincp/debt-brackets,111,0,0
+1741445764641,266,Debt Brackets Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,215,0,0
+1741445764909,416,Debt Brackets Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,938,2,2,https://dev.internals.usclaritytech.com/admincp/login,119,0,0
+1741445764909,119,Debt Brackets Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,473,2,2,https://dev.internals.usclaritytech.com/admincp/debt-brackets,119,0,0
+1741445765029,296,Debt Brackets Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,295,0,0
+1741445764909,418,Negotiator Inquiry Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,116,0,0
+1741445764909,117,Negotiator Inquiry Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/contact-debts-negotiation-page,116,0,0
+1741445765026,301,Negotiator Inquiry Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,298,0,0
+1741445765327,404,Settings Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,134,0,0
+1741445765326,405,Negotiator Inquiry Page Request,200,OK,DEV-Internals 3-2,text,true,,48599,955,2,2,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445765327,134,Settings Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/settings,134,0,0
+1741445765461,270,Settings Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,204,0,0
+1741445765326,135,Negotiator Inquiry Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,490,2,2,https://dev.internals.usclaritytech.com/admincp/contact-debts-negotiation-page,135,0,0
+1741445765461,270,Negotiator Inquiry Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,204,0,0
+1741445765732,412,Settings Page Request,200,OK,DEV-Internals 3-2,text,true,,48599,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,121,0,0
+1741445765732,121,Settings Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/settings,121,0,0
+1741445765854,290,Settings Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,290,0,0
+1741445765732,413,Messages Page Request,200,OK,DEV-Internals 3-1,text,true,,48591,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,121,0,0
+1741445765732,121,Messages Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/messages,121,0,0
+1741445765854,291,Messages Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47350,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,290,0,0
+1741445766146,340,Messages Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,933,2,2,https://dev.internals.usclaritytech.com/admincp/login,133,0,0
+1741445766146,133,Messages Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,468,2,2,https://dev.internals.usclaritytech.com/admincp/messages,133,0,0
+1741445766279,207,Messages Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,167,0,0
+1741445766146,340,Faq Questions Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,938,2,2,https://dev.internals.usclaritytech.com/admincp/login,133,0,0
+1741445766146,133,Faq Questions Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,473,2,2,https://dev.internals.usclaritytech.com/admincp/faq-questions,133,0,0
+1741445766279,207,Faq Questions Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,167,0,0
+1741445766487,323,Faq Categories Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,939,2,2,https://dev.internals.usclaritytech.com/admincp/login,113,0,0
+1741445766487,323,Faq Questions Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,938,2,2,https://dev.internals.usclaritytech.com/admincp/login,113,0,0
+1741445766487,113,Faq Categories Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,474,2,2,https://dev.internals.usclaritytech.com/admincp/faq-categories,113,0,0
+1741445766487,113,Faq Questions Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,473,2,2,https://dev.internals.usclaritytech.com/admincp/faq-questions,113,0,0
+1741445766600,210,Faq Questions Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,172,0,0
+1741445766600,210,Faq Categories Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,163,0,0
+1741445766811,334,Faq Categories Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,939,2,2,https://dev.internals.usclaritytech.com/admincp/login,120,0,0
+1741445766811,334,Employees Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,934,2,2,https://dev.internals.usclaritytech.com/admincp/login,120,0,0
+1741445766811,120,Employees Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,469,2,2,https://dev.internals.usclaritytech.com/admincp/employees,120,0,0
+1741445766811,120,Faq Categories Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,474,2,2,https://dev.internals.usclaritytech.com/admincp/faq-categories,120,0,0
+1741445766931,214,Faq Categories Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,172,0,0
+1741445766931,214,Employees Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,191,0,0
+1741445767146,432,Employees Page Request,200,OK,DEV-Internals 3-2,text,true,,48591,934,2,2,https://dev.internals.usclaritytech.com/admincp/login,138,0,0
+1741445767146,138,Employees Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,469,2,2,https://dev.internals.usclaritytech.com/admincp/employees,138,0,0
+1741445767285,293,Employees Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47350,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,292,0,0
+1741445767146,434,Commissions Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,936,2,2,https://dev.internals.usclaritytech.com/admincp/login,138,0,0
+1741445767146,138,Commissions Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,471,2,2,https://dev.internals.usclaritytech.com/admincp/commissions,138,0,0
+1741445767285,295,Commissions Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,292,0,0
+1741445767579,361,Commissions Page Request,200,OK,DEV-Internals 3-2,text,true,,48599,936,2,2,https://dev.internals.usclaritytech.com/admincp/login,133,0,0
+1741445767579,133,Commissions Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,471,2,2,https://dev.internals.usclaritytech.com/admincp/commissions,133,0,0
+1741445767713,227,Commissions Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47358,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,187,0,0
+1741445767581,368,Adminstrators Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,931,2,2,https://dev.internals.usclaritytech.com/admincp/login,131,0,0
+1741445767581,132,Adminstrators Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,466,2,2,https://dev.internals.usclaritytech.com/admincp/admins,131,0,0
+1741445767713,236,Adminstrators Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,191,0,0
+1741445767941,332,Adminstrators Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,931,2,2,https://dev.internals.usclaritytech.com/admincp/login,116,0,0
+1741445767950,323,Dashboard Page Request,200,OK,DEV-Internals 3-1,text,true,,48592,924,2,2,https://dev.internals.usclaritytech.com/admincp/login,111,0,0
+1741445767941,116,Adminstrators Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,466,2,2,https://dev.internals.usclaritytech.com/admincp/admins,116,0,0
+1741445767950,111,Dashboard Page Request-0,302,Found,DEV-Internals 3-1,text,true,,1241,459,2,2,https://dev.internals.usclaritytech.com/admincp,111,0,0
+1741445768062,211,Dashboard Page Request-1,200,OK,DEV-Internals 3-1,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,163,0,0
+1741445768058,215,Adminstrators Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,2,2,https://dev.internals.usclaritytech.com/admincp/login,167,0,0
+1741445768274,135,Logout Request,302,Found,DEV-Internals 3-1,text,true,,1241,399,2,2,https://dev.internals.usclaritytech.com/admincp/logout,135,0,0
+1741445768274,327,Dashboard Page Request,200,OK,DEV-Internals 3-2,text,true,,48592,924,1,1,https://dev.internals.usclaritytech.com/admincp/login,135,0,0
+1741445768274,135,Dashboard Page Request-0,302,Found,DEV-Internals 3-2,text,true,,1241,459,1,1,https://dev.internals.usclaritytech.com/admincp,135,0,0
+1741445768410,191,Dashboard Page Request-1,200,OK,DEV-Internals 3-2,text,true,,47351,465,1,1,https://dev.internals.usclaritytech.com/admincp/login,161,0,0
+1741445768603,111,Logout Request,302,Found,DEV-Internals 3-2,text,true,,1241,399,1,1,https://dev.internals.usclaritytech.com/admincp/logout,111,0,0
